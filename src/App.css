@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic");
+* {
+  font-family: "Montserrat";
+  color: black;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.5) 50%,
+      rgba(0, 0, 0, 0.5) 50%
+    ),
+    url(../public/pngtree-soccer-stadium-in-the-dark-lit-image_2611677.jpg);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Fifa-body {
+  position: relative;
+  width: 300px;
+  height: 300px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Fifa-body > img {
+  position: absolute;
+  width: 100%;
+  height: 134%;
+}
+.SUI {
+  position: absolute;
+  top: 10.5%;
+  left: 57%;
+  transform: translateX(-55%);
+  width: 175px;
+  height: 184.5px;
+}
+.Stats1 {
+  position: absolute;
+  width: 60px;
+  left: 18%;
+  top: 18%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+h1 {
+  font-size: 1.8rem;
+  margin: 0;
+  font-family: "Montserrat";
+  column-gap: white;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h3 {
+  margin: 0;
+  font-family: "Montserrat";
+  font-size: 1rem;
+  color: white;
+}
+.Flag {
+  position: absolute;
+  top: 44%;
+  left: 23.5%;
+}
+#Ronaldo-name {
+  position: absolute;
+  top: 73.5%;
+  left: 49%;
+  transform: translateX(-50%);
+  font-family: "Montserrat";
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: white;
+}
+.Stats2 {
+  position: absolute;
+  width: 20%;
+  top: 88%;
+  left: 22%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: rgb(255, 255, 255);
+}
+.Stats2 h3 {
+  font-family: "Montserrat";
+  font-weight: 700;
+}
+.Stats3 {
+  position: absolute;
+  width: 20%;
+  top: 88%;
+  left: 59%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: rgb(255, 255, 255);
+}
+.Stats3 h3 {
+  font-family: "Montserrat";
+  font-weight: 700;
+}
+#Club {
+  position: absolute;
+  width: 13%;
+  top: 55%;
+  left: 22%;
 }
